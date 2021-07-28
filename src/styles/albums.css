@@ -1,0 +1,113 @@
+.invisible {
+    display: none;
+}
+
+.albumsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addAlbumBtn {
+    font-size: 50px;
+    border: 5px solid yellow;
+}
+
+#albumCreationForm, #imageCreationForm {
+    margin-top: 2rem;
+}
+
+.albumsHolder {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: calc(70px + 2rem);
+}
+
+.album {
+    border: 1px solid yellow;
+    transition: 0.4s;
+    max-width: 350px;
+    position: relative;
+}
+
+#createdBy {
+    margin-bottom: 60px;
+}
+
+.album:hover {
+    background-color: yellow;
+}
+
+.album:hover h1, .album:hover p {
+    color: black;
+}
+
+.album img {
+    max-width: 350px;
+    border-bottom: 1px solid yellow;
+}
+
+.deleteAlbumBtn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.deleteAlbumBtn:hover {
+    background-color: crimson;
+    color: yellow;
+}
+
+.albumPage {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.albumContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 3;
+    gap: 2rem;
+    margin-bottom: calc(70px + 2rem);
+}
+
+
+.albumHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+    margin-bottom: calc(70px + 2rem);
+}
+
+#imageCreationForm {
+    box-sizing: border-box;
+    max-width: 350px;
+    width: 350px;
+    padding: 40px;
+    margin-top: 0;
+}
+
+.imageThumb .imageFrame {
+    background-position: center;
+    background-size: cover;
+    max-width: 300px;
+    max-height: 300px;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.imageThumb {
+    display: flex;
+    flex-direction: column;
+}

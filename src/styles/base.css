@@ -1,0 +1,73 @@
+.basePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#navbar > a {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#albums {
+    width: 50%;
+}
+
+#users {
+    width: 50%;
+}
+
+.usersHolder {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: calc(70px + 2rem);
+    margin-top: 2rem;
+}
+
+.userCard{
+    padding: 10px;
+    font-size: 20px;
+    color: yellow;
+    box-sizing: border-box;
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    transition: 0.4s;
+}
+.userCard:hover {
+    background-color: yellow;
+}
+
+.userCard:hover p {
+    color: black !important;
+}
+
+.makeAdminBtn, .removeAdminBtn, .deleteUserBtn {
+    width: 50%;
+    background-color: yellow !important;
+    color: black !important;
+    border: 1px black solid;
+}
+.makeAdminBtn:hover, .removeAdminBtn:hover, .deleteUserBtn:hover {
+    background-color: black !important;
+    color: yellow !important;
+}
+.deleteUserBtn  {
+    margin-bottom: 1rem;
+}
